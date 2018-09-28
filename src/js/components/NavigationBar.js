@@ -1,14 +1,15 @@
 import React from 'react';
+import classNames from 'classnames';
 import { Link } from 'react-router-dom';
 
-const rootClassName = 'navigationBar';
+const className = 'navigationBar';
 
 const NavigationBar = () =>  {
   return (
-    <nav className={rootClassName}>
-      <Link className={`${rootClassName}__home`} to="/">Home</Link>
-      <Link className={`${rootClassName}__about`} to="/about">About</Link>
-      <Link className={`${rootClassName}__experience`} to="/experience">Experience</Link>
+    <nav className={className}>
+      <Link className={`${className}__home`} to="/">Home</Link>
+      <Link className={`${className}__about`} to="/about">About</Link>
+      <Link className={`${className}__experience`} to="/experience">Experience</Link>
     </nav>
   );
 }

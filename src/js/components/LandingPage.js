@@ -4,12 +4,17 @@ import Header from './Header';
 import Footer from './Footer';
 import QuickSearch from './QuickSearch';
 
+const rootClassName="landingPage"
+
 const LandingPage = () =>  {
   return (
-    <div>
-      <Header />
-      <About />
-      <QuickSearch />
+    <div className={rootClassName}>
+      <div className={`${rootClassName}__heroImage`}></div>
+      <div className={`${rootClassName}__content`}>
+        <Header />
+        <About />
+        <QuickSearch />
+      </div>
       <Footer />
     </div>
   );

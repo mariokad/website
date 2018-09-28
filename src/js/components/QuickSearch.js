@@ -84,6 +84,8 @@ class QuickSearch extends Component {
   render() {
     return (
       <div className={rootClassName}>
+        <h3 className={`${rootClassName}__heading`}>Quick Search</h3>
+        <p className={`${rootClassName}__description`}>Use this to get to know me on the fly 👟</p>
         <input className={`${rootClassName}__input`}
                onChange={this.handleChange}
                onKeyPress={this.handleEnterKeyDown}
