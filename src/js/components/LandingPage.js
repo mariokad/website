@@ -1,9 +1,17 @@
 import React from 'react';
-import propTypes from 'prop-types';
+import About from './About';
+import Header from './Header';
+import Footer from './Footer';
+import QuickSearch from './QuickSearch';
 
 const LandingPage = () =>  {
   return (
-    <div>Hello, World</div>
+    <div>
+      <Header />
+      <About />
+      <QuickSearch />
+      <Footer />
+    </div>
   );
 };
 
