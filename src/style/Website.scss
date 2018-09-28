@@ -1,8 +1,79 @@
+// colors
+$white:rgba(255, 255, 255, 0.7);
+$greyBlue: rgba(125, 142, 155, 1);
+$midnightBlue: rgba(35, 40, 50,1);
+$highlightColor: rgba(34, 159, 235, 0.4);
+
+// font
+$quickSand: 'Quicksand', sans-serif;
+
+// font weights
+$light: 300;
+$bold: 500;
+
+// Body styling
 body {
-  font-family: 'Quicksand', sans-serif;
-  font-weight: 300;
+  font-family: $quickSand;
+  font-weight: $light;
+  background-color: $white;
+  margin: 0;
 }
  
 h1, h2, h3, h4, h5, h6 {
-  font-weight: 500;
+  font-weight: $bold;
+}
+
+// Header styling
+.header, .about, .quickSearch {
+  padding: 10px
+}
+
+// Quick Search styling
+.quickSearch__input {
+  height: 28px;
+  width: 280px;
+  line-height: 26px;
+  font-family: $quickSand;
+  background-color: $midnightBlue;
+  border: 1px solid $greyBlue;
+  border-radius: 2px;
+  color: $white;
+  text-indent: 10px;
+}
+
+// Navigation bar styling
+.navigationBar {
+  width: 100%;
+  height: 40px;
+  background: $midnightBlue;
+
+  .navigationBar__home, .navigationBar__about, .navigationBar__experience {
+    display: block;
+    float: left;
+    color: $white;
+    font-size: 12px;
+    padding: 14px;
+    text-decoration: none;
+  }
+}
+
+// Footer styling
+.footer {
+  padding: 0;
+  margin: 0;
+}
+
+.footer__navigation {
+  width: 100%;
+  height: 40px;
+  background: $midnightBlue;
+
+  a {
+    display: block;
+    float: left;
+    color: $white;
+    font-size: 12px;
+    padding: 14px;
+    text-decoration: none;
+  }
 }
