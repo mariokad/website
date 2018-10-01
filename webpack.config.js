@@ -1,4 +1,6 @@
-const HtmlWebPackPlugin = require("html-webpack-plugin");
+const path = require('path');
+const HtmlWebPackPlugin = require('html-webpack-plugin');
+
 module.exports = {
   module: {
     rules: [
@@ -19,17 +21,18 @@ module.exports = {
       },
       {
         test: /\.scss$/,
-        use: [{
-            loader: "style-loader"
-                      }, {
-            loader: "css-loader"
-        }, {
-            loader: "sass-loader",
-            options: {
-                includePaths: ["absolute/path/a", "absolute/path/b"]
-            }
-        }]
-}
+        use: [
+          {
+            loader: "style-loader" // creates style nodes from JS strings
+          },
+          {
+            loader: "css-loader" // translates CSS into CommonJS
+          },
+          {
+            loader: "sass-loader" // compiles Sass to CSS
+          }
+        ]
+      }
     ]
   },
   plugins: [
